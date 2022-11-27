@@ -5,30 +5,34 @@
 }
 
 .channel-container {
-    width: 90%;
-    height: 100%;
-    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .channel-title {
     width: 100%;
-    height: 5%;
-    margin-top: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 15%;
 }
 
-.channel-brand {
-    width: 500px;
+.channel-title .brand {
+    width: 100%;
     height: 100%;
+    object-fit: contain;
 }
 
 .channel-video {
-    margin-top: 32px;
-    width: 100%;
-    height: 60%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 1280px;
+    height: 720px;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .channel-video {
+        width: 480px;
+        height: 270px;
+    }
 }
